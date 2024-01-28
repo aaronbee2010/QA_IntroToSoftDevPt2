@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Book a Course</title>
+    <style>
+        ul {
+            list-style: none;
+            /* padding-inline-start: 0px; */
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.png" alt="QA Corporate Logo">
+        <h1 style="background-image:url(img/trainer.jpg); padding: 4em 1em; color: white; background-size: cover">Course
+            Registration</h1>
+    </header>
+
+    <!-- insert form here -->
+    <form>
+        <fieldset>
+            <legend>Your Details</legend>
+            <ul>
+                <li>
+                    <label for="firstName">First name</label>
+                    <input id="firstName" name="firstName" type="text" autofocus>
+                </li>
+                <li>
+                    <label for="surname">Surname</label>
+                    <input id="surname" name="surname" type="text">
+                </li>
+                <li>
+                    <label for="positionRole">Position / Role</label>
+                    <input id="positionRole" name="positionRole" type="text">
+                </li>
+                <li>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="you@domain.com" required>
+                </li>
+                <li>
+                    <label for="phone">Phone</label>
+                    <input id="phone" name="phone" type="tel" placeholder="Eg. +447500000000" required>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Course Details</legend>
+            <ul>
+                <li>
+                    <label for="courseDetails">Course</label>
+                    <select id="courseDetails" name="courseDetails">
+                        <option value="1">Programming with JavaScript</option>
+                        <option value="2">Developing Web Applications using HTML5</option>
+                        <option value="3">Developing Responsive Websites</option>
+                        <option value="4">Leveraging the Power of jQuery</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="delegateCount">Number of delegates</label>
+                    <input id="delegateCount" name="delegateCount" type="number">
+                </li>
+                <li>
+                    <label for="date">Date</label>
+                    <input id="date" name="date" type="date">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

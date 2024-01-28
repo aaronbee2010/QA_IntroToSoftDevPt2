@@ -1,0 +1,17 @@
+#siteLogo {
+    width: 100px;
+}
+
+#siteHeading {
+    display: inline;
+    vertical-align: middle;
+}
+
+/* #results {
+    padding-top: 32px;
+    padding-bottom: 32px;
+} */
+
+#resultsTable {
+    margin-top: 32px;
+}
